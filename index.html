@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pausewatch</title>
+
+    <style>
+        *{
+            font-family: consolas, monospace;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 90vh;
+            height: 8
+            0vh;
+            background: rgb(27, 22, 22);
+        }
+        #container{
+            text-align: center;
+            background-color: beige;
+            display: inline-block;
+            border: 3px solid;
+            border-radius: 100px;
+            padding: 1rem 3rem 3rem 3rem;
+        }
+        .timerButton{
+            width: 10rem;
+            height: 3rem;
+            border: 3px solid;
+            border-radius: 12px;
+            background-color: rgb(75, 125, 126);
+            color: white;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: 0.1s;
+        }
+        #time{
+            font-size: 7.1rem;
+            opacity: 0.86;
+        }
+        .timerButton:hover{
+            background-color: rgb(42, 71, 72);
+            transition: 0.1s ease;
+        }
+        .timerButton:active{
+            background-color: rgb(27, 22, 22);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="time">00:00:00</div>
+        <button id="start" class="timerButton">start</button>
+        <button id="pause" class="timerButton">pause</button>
+        <button id="reset" class="timerButton">reset</button>  
+    </div>
+
+   
+
+    <script src="/index.js"></script>
+</body>
+</html>
